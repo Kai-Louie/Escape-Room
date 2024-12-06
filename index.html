@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Fullscreen!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cover" id="cover">
+      <p class="p1 center">Press F11 to Play</p>
+    </div>
+    <div class="col1">
+      <div class="box1 center-chart">
+        <img
+          src="images/chart.png"
+          id="chart"
+          class="fat chart"
+          onclick="hidechart()"
+        />
+      </div>
+      <div class="box2 center-left">
+        <img src="images/exit.png" onclick="modal1()" />
+      </div>
+      <div class="box3 center"></div>
+    </div>
+    <div class="col2">
+      <div class="box1 center-warning">
+        <img src="images/warning.png" />
+      </div>
+      <div class="box1 center-bottom">
+        <img src="images/computer.png" onclick="modal4()" />
+      </div>
+    </div>
+    <div class="col1">
+      <div class="box4 center"></div>
+      <div class="box1 center-locker">
+        <img src="images/locker.png" onclick="modal3()" />
+      </div>
+      <div class="box4 center"></div>
+    </div>
+    <div class="col2">
+      <div class="box5 center"></div>
+      <div class="box6 center"></div>
+      <div class="box5 center"></div>
+    </div>
+    <div class="col1"></div>
+    <div class="col1">
+      <div class="box1 center"></div>
+      <div class="box3 secret-center">
+        <div class="secret" onclick="modal5()"></div>
+      </div>
+      <div class="box3 center"></div>
+      <div class="box3 center-paper1">
+        <img src="images/paper.png" onclick="showchart()" />
+      </div>
+    </div>
+    <div class="col2">
+      <div class="box7"></div>
+      <div class="box8 center">
+        <div class="box9 out center">
+          <img src="" id="out" />
+        </div>
+        <div class="box9 center" onclick="" id="window"></div>
+      </div>
+      <div class="box1 center">
+        <div class="box10 center-paper2">
+          <img src="images/paper.png" onclick="modal2()" />
+        </div>
+        <div class="box9 center"></div>
+      </div>
+    </div>
+
+    <div class="modal1 center" id="modal1">
+      <span class="close" style="font-size: 50px" onclick="hmodal1()"
+        >&times;</span
+      >
+      <div class="modalcon1 center">
+        <div class="col2"></div>
+        <div class="col2"></div>
+        <div class="col2 center-top">
+          <img src="images/locked.png" />
+        </div>
+        <div class="col2"></div>
+        <div class="col2"></div>
+      </div>
+    </div>
+
+    <div class="modal1 center" id="modal2">
+      <span class="close" style="font-size: 50px" onclick="hmodal2()"
+        >&times;</span
+      >
+      <div class="modalcon2 center">
+        <div class="secret1">
+          <div class="secret2 left">
+            <img src="images/huh.png" />
+          </div>
+          <div class="secret3 evil-center" id="secret1">
+            <img src="images/secret.png" onclick="hmodal2()" />
+          </div>
+          <div class="secret2 evil-center" id="secret2">
+            <img src="images/what.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal1 center" id="modal3">
+      <span class="close" style="font-size: 50px" onclick="hmodal3()"
+        >&times;</span
+      >
+      <div class="modalcon3 center">
+        <div class="secret1">
+          <div class="black center hawk">
+            <input type="text" id="answer1" class="" />
+            <input
+              type="submit"
+              value="Submit"
+              id="Submit"
+              class=""
+              onclick="checkInput()"
+            />
+          </div>
+          <div class="tuah center">
+            <img src="images/locker.png" class="fat2" id="hawk" />
+          </div>
+          <div class="spit cuh">
+            <div class="thing that" id="nugget"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal1 center" id="modal5">
+      <span class="close" id="c5" style="font-size: 50px" onclick="hmodal5()"
+        >&times;</span
+      >
+      <div class="modalcon5 center"><img src="images/face.jpg" /></div>
+    </div>
+
+    <div class="modal1 center" id="modal4">
+      <span class="close" style="font-size: 50px" onclick="hmodal4()"
+        >&times;</span
+      >
+      <div class="modalcon4 center">
+        <div class="box1 dark-grey">
+          <div class="puzzle1 center">
+            <img src="images/wrong.png" id="slot1" class="skinny" />
+          </div>
+          <div class="puzzle1 center">
+            <img src="images/wrong.png" id="slot2" class="skinny" />
+          </div>
+          <div class="puzzle1 center">
+            <img src="images/wrong.png" id="slot3" class="skinny" />
+          </div>
+        </div>
+        <div class="box1 black">
+          <div class="puzzle1 center">
+            <img
+              src="images/letter/B.png"
+              class="click"
+              id="fslot"
+              onclick="slot1()"
+            />
+          </div>
+          <div class="puzzle1 center">
+            <img
+              src="images/letter/g.png"
+              class="click"
+              id="sslot"
+              onclick="slot2()"
+            />
+          </div>
+          <div class="puzzle1 center">
+            <img
+              src="images/letter/u.png"
+              class="click"
+              id="tslot"
+              onclick="slot3()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dmodal" id="dead">
+      <div class="dmodalcon">
+        <div class="black center thing">
+          <img src="images/deadword.png" />
+        </div>
+      </div>
+    </div>
+    <div class="dmodal" id="dead2">
+      <div class="dmodalcon">
+        <div class="black center thing">
+          <img src="images/dont.png" />
+        </div>
+      </div>
+    </div>
+    <div class="omodal center" id="opening">
+      <div class="omodalcon" onclick="start()"></div>
+    </div>
+
+    <audio src="audio/boom.mp3" id="a1"></audio>
+    <audio src="audio/paperS.mp3" id="a2"></audio>
+    <audio src="audio/door.mp3" id="a3"></audio>
+    <audio src="audio/Owen1.mp3" id="a4"></audio>
+    <audio src="audio/lopen.mp3" id="a5"></audio>
+    <audio src="audio/lclose.mp3" id="a6"></audio>
+    <audio src="audio/letmein.mp3" id="a7"></audio>
+    <audio src="audio/dead.mp3" id="a8"></audio>
+    <audio src="audio/deads.mp3" id="a9"></audio>
+    <audio src="audio/gbreak.mp3" id="a10"></audio>
+    <audio src="audio/scream.mp3" id="a11"></audio>
+    <audio src="audio/background.mp3" id="a12"></audio>
+    <audio src="audio/background2.mp3" id="a13"></audio>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+  </body>
+</html>
