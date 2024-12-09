@@ -81,7 +81,7 @@ function uexit() {
   document.getElementById("out").onclick = exit;
 }
 function exit() {
-  window.location.href = "https://825t5k.csb.app/";
+  window.location.href = "https://jacobbozzalla123.github.io/Escape-Room/";
 }
 function modal3() {
   document.getElementById("modal3").style.display = "flex";
