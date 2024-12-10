@@ -1,0 +1,1 @@
+This is one of the escape rooms ever made, and I assure you that if you play it, you will have played my escape room. Trust me, you may or may not want to miss it, I'm not sure. It's not like I'm a shrink or anything. Idk what you want.
