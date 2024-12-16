@@ -47,10 +47,14 @@ function hmodal4() {
 }
 function modal5() {
   document.getElementById("modal5").style.display = "flex";
+  var audio = document.getElementById("a12");
+  audio.pause();
   document.getElementById("a4").play();
   document.getElementById("c5").removeAttribute("onclick", "hmodal5()");
   sleep(60000).then(() => {
     document.getElementById("c5").setAttribute("onclick", "hmodal5()");
+    var audio = document.getElementById("a12");
+    audio.play();
   });
 }
 function hmodal5() {
